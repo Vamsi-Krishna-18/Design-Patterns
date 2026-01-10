@@ -1,0 +1,14 @@
+Builder is a creational design pattern that allows to create complex objects on a step-by-step basis.
+
+Problem: Sometimes, we may not require all the fields to create the object.
+In that case, we should either pass null values to the constructor or create lots of constructors.
+
+Solution: Builder pattern extracts the object creation into a separate class called builders.
+Builder classes have the same fields as of the actual class and each field have a reserve setter method (without set prefix)
+And it additionally has a build() method that creates and returns the object that builder is supposed to create.
+The build() method uses the constructor created in the actual class
+
+Director:
+In case of repeated use of code while constructing object, Director class is used to define the order in which we should call
+the construction steps so that we can reuse specific configurations of products we are building.
+Director classes are optional while using builder pattern.

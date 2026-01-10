@@ -1,4 +1,4 @@
-package Patterns.Creational;
+package Patterns.Creational.Singleton;
 
 public class Singleton {
     private static Singleton instance;

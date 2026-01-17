@@ -1,0 +1,12 @@
+Prototype pattern is a creational design pattern which creates new objects by cloning existing instances. it is ideal
+when object creation is expensive and many similar objects are needed.
+
+Design:
+1. Create an interface for prototype that has clone method.
+2. Implement the interface for the classes that requires cloning.
+3. In case of reference variables, ensure to follow deep copy instead of shallow copy.
+(With shallow copy, the reference of the reference variables is pointed to the original reference variable.
+With deep copy, a new reference variable is created while cloning the original object)
+
+Prototype Registry class is used to centralize commonly used prototypes. The prototype objects are maintained in a Map to clone
+them when requested.
